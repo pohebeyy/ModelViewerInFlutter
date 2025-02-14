@@ -122,6 +122,30 @@ class _lk extends State<lk> {
         ],
         
       ),
+      floatingActionButton: Stack(
+        children: [
+         
+          
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround, 
+            children: [
+              IconButton(
+                onPressed: () {
+                   Navigator.of(context).pushNamed('/home');
+                  },
+                  icon: Icon(Icons.home)
+                  ,iconSize:40
+                
+                ), 
+              IconButton(onPressed: (){
+                Navigator.of(context).pushNamed('/lk');
+              }, 
+              icon: Icon(Icons.person),iconSize: 40,)
+            ],
+          ),
+          SizedBox(height: 20), 
+        ],
+      ),
       
     );
   }

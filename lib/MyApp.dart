@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       
       routes:{
-        '/':(context) => MyHomePage(),
+        '/':(context) => MyHomePage (),
         '/home' :(context)=>home(),
         '/register' :(context) => Register(),
         '/lk':(context) => lk(),
